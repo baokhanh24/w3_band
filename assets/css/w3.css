@@ -1,0 +1,526 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+ font-family: Helvetica  ,Arial, sans-serif;
+}
+
+#main{
+    
+}
+
+#header{
+   height: 46.5px;
+   background-color: black;
+   position: fixed !important;
+   top:0;
+   left: 0;
+   right:0;
+   z-index: 1;
+
+
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav ,.subnav {
+    list-style-type: none;
+    
+}
+#nav > li {
+    display: inline-block;
+}
+
+
+#nav li {
+    position: relative;
+
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0px 24px; 
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover ,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    
+}
+
+
+
+
+#nav .subnav {
+    display: none; 
+    background-color: #fff;
+    position:absolute;
+    top:100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav li{
+    height: 38.5px;
+    width: 160px;
+   
+
+}
+
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    
+}
+#header .menu-mobile-btn{
+ position:absolute;
+ top:0;
+ right: 0;
+ display: none;
+}
+
+#header .menu-mobile-btn,
+#header .seach-btn {
+ float: right;
+ padding: 0 24px;
+
+ cursor: pointer;
+ 
+}
+
+#header .seach-btn:hover {
+    background-color: #f44336;
+}
+#header .menu-mobile-btn:hover{
+    color:#000;
+    background-color: #ccc;
+
+}
+
+#header .menu-icon,
+#header .seach-icon {
+    color: #fff;
+    font-size: inherit;
+    line-height: 46.5px;
+
+}
+i.fa-solid.fa-bars,i.fa-solid.fa-magnifying-glass {
+    padding: 8px;
+    
+}
+
+#slider{
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background:url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    
+}
+.slider_content{
+    position: relative;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 58px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0px;
+
+}
+
+#slider .text-description {  
+    font-size: 15px;
+
+}
+
+
+#content{
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    overflow: hidden;
+}
+
+#content .content-heading {
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+#content .section-sub-headig {
+    text-align: center;
+    margin: 15px 0px    ;
+    font-size: 15px; 
+    font-style: italic;
+    color:#ccc;
+    opacity: 1.5;
+}
+
+#content .about-text {   
+    text-align: justify;   
+    font-size: 15px; 
+    line-height: 1.4;
+    margin:15px 0px; 
+    max-width: 800px;   
+}
+
+#content .members-list {  
+    margin-top:48px;
+    
+
+}
+
+#content .members-item {
+    float:left;
+    width: 33.333333%;  
+
+
+}
+
+#content .member-name {
+    margin: 15px 0px;
+    text-align: center;
+}
+
+#content .member-img {
+    width: 60%;
+   margin-left: 50px;
+   border-radius: 4px;
+}
+
+#content .tour-section {
+    
+    background: #000;
+}
+#content .tickets-list ul{
+   
+}
+
+
+#content .tickets-list li {
+    height: 39.5px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style-type: none;
+    padding:8px 16px;
+    background-color: #fff
+    
+    
+}
+#content .tickets-list .sold-out {
+    margin-left: 16px;
+    padding:2px 8px;
+    color: white;
+    background-color: #f44336;
+}
+#content .tickets-list .sold-out3{
+    width: 24.71px;
+    height: 18.65px;
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    margin-right: 16px;
+    text-align: center;
+    
+    
+}
+
+
+
+#content .places-list{
+    padding: 32px 8px;
+    margin: 0 -15px;
+
+}
+
+#content .places-item{
+    margin: 16px 0;
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+
+}
+
+#content .places-img{
+    width:100%  ;
+    vertical-align: middle;
+    
+}
+
+#content .places-img:hover {
+    opacity: 0.6;
+}
+
+#content .places-content{
+    background-color: #fff;
+    padding: 0.15px 16px;
+    
+    
+    
+
+   
+}
+
+#content .places-heading{
+    margin: 15px 0;
+
+}
+
+#content .places-time{
+    margin: 15px 0;
+    opacity: 0.60;
+}
+
+#content .places-desc{
+    margin: 15px 0;
+
+}
+
+#content .places-buy-btn {
+    
+    font-family: -webkit-body;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 9px 14px;
+    border: none;
+}
+
+#content .places-buy-btn:hover{
+    background-color: #ccc  ;
+    color: #000;
+    
+}
+
+#content .section-body{
+    padding: 32px 0;
+
+}
+#content .section-chicago{
+    width: 49.99999%;
+    font-size: 18px!important;
+}
+.fa-solid{
+    width: 30px;
+    padding: 7px 0;
+    
+    
+   
+}
+
+
+#content .section-content{
+   
+    float: left;
+    
+}
+
+#content .section-padding{
+    margin: 0 -16px 8px 41px;
+}
+#content .section-half {
+    padding: 0 8px;
+    float: left;
+}
+#content .section-input {
+    padding: 11px 8px;
+    border: 1px solid #ccc!important;
+    width: 159.76px;
+}
+
+#content .section-border{
+    margin-left: 50px;
+    margin-top: 10px;
+    
+    padding: 11px 8px;
+    border: 1px solid #ccc!important;
+    width: 334px;
+}
+#content .section-send{
+    text-transform: uppercase;
+    float:right;
+    margin: 16px 0;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px
+    
+}
+
+#content .section-send:hover{
+    background-color: #ccc;
+    color:#000;
+}
+#content .content-image {
+    width: 100%;
+}
+
+
+#footer{
+    padding :64px 16px;
+    text-align: center;
+
+}
+.fa-brands{
+    font-size: 25px;
+}
+.fa-brands:hover{
+    opacity: 0.6;
+}
+.w3-medium{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.model.open{
+    display: flex;
+}
+
+.model_content {
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    animation: khanhpro ease .3s;
+}
+.model_header {
+    background-color: #009688;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+i.fa-solid.fa-suitcase {
+    padding-right: 40px;
+}
+.model_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    padding: 3px;
+    color: #fff;
+
+}
+
+.model_close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+i.fa-solid.fa-xmark {
+    text-align: center;
+}
+.model_body{
+    padding:0.15px 16px;    
+}
+
+.model_lable {
+    display: block;
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+button.model_button {
+    display: block;
+}
+.model_input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    height: 40.5px;
+}
+.model_button {
+    width: 100%;
+    margin: 15px 0px;
+    height: 54.5px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid#fff;
+}
+.model_button:hover{
+    background-color: #ccc!important;
+    color: #000;
+}
+
+.model_forter {
+    padding: 0.15px 16px;
+}
+.model_close_forter {
+    margin: 16px 0px;
+    
+}
+
+.close_model {
+    padding: 8px 16px;
+    text-align: center;
+    background-color: #f44336!important;
+    color: #fff;
+    border: 1px solid#fff;
+}
+.close_model:hover {
+    background-color: #ccc!important;
+    color: #000;
+    
+}
+.model_need {
+    float: right;
+}
+
+@keyframes khanhpro {
+    from{
+        opacity: 0.3;
+        transform: translatey(-220px);
+
+    }
+    to{
+        transform: translatex(0);
+    }
+}
